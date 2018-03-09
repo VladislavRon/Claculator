@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src='main.js' defer></script>
+</head>
+<body>
+<div class="container">
+        <table border="1" cellspacing="0">
+        <tr>
+            <img src="http://s1.radikale.ru/uploads/2018/2/16/f6ffa4fa8510cc51f0751b66dc76a542-full.jpg">
+        </tr>
+        <tr>
+            <!-- не получается сделать строку ввода нерастядимой: растягивает весь калькулятор при достижении определенного количества знаков -->
+
+            <td colspan="4" id="inputLabel">0</td>
+        </tr>
+        <tr>
+            <td id="whitlyorange"><button onclick="pushBtn(this);" style="color:orange;
+    background-color: #ececec;">C</button></td>
+            <td><button value="add" onclick="LargeSize()">add</button></td>
+            <td><button onclick="pushBtn(this);">/</button></td>
+            <td><button onclick="pushBtn(this);">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">7</button></td>
+            <td><button onclick="pushBtn(this);">8</button></td>
+            <td><button onclick="pushBtn(this);">9</button></td>
+            <td><button onclick="pushBtn(this);">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">4</button></td>
+            <td><button onclick="pushBtn(this);">5</button></td>
+            <td><button onclick="pushBtn(this);">6</button></td>
+            <td><button onclick="pushBtn(this);">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pushBtn(this);">1</button></td>
+            <td><button onclick="pushBtn(this);">2</button></td>
+            <td><button onclick="pushBtn(this);">3</button></td>
+            <td id="orange" style="background-color:yellow"><button onclick="pushBtn(this);" style="color:black;background-color:orange">=</button></td>
+            <!-- <td rowspan="2" id="orange" style="background-color:orange"><button onclick="pushBtn(this);" style="color:black;background-color:orange; height:156px;">=</button></td>
+        </tr>
+        <tr id="smallSize">
+            <td colspan="2"><button style="width: 156px;" onclick="pushBtn(this);">0</button></td>
+            <td><button onclick="pushBtn(this);">.</button></td>
+        </tr>-->
+          <tr id="smallSize">
+            <td><button onclick="pushBtn(this);">0</button></td>
+            <td><button onclick="pushBtn(this);">.</button></td>
+            <td><button onclick="pushBtn(this);">√</button></td>
+            <td><button onclick="pushBtn(this);">^</button></td>
+        </tr>
+            
+            
+            
+
+            
+    </table>
+</div>
+
+
+ 
+
+</body>
+</html>
